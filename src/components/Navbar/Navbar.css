@@ -3,8 +3,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .menu-toggle {
@@ -33,6 +31,10 @@ button.menu-toggle {
 
 }
 
+.nav-links li.selected::after {
+    transform: scaleX(1);
+
+}
 /* 
 button.menu-toggle:focus {
   outline: none;
