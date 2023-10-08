@@ -1,0 +1,37 @@
+.team-page {
+    padding: 20px;
+}
+
+.team-page .intro-topic {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.team-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.backgroud-pattern {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 60px;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 0;
+}
+.backgroud-pattern .strip {
+    height: 25px;
+    width: 100vw;
+    background: rgb(217, 217, 217);
+}
+
+@media only screen and (max-width: 1330px) {
+  .team-list {
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-gap: 20px;
+  }
+}

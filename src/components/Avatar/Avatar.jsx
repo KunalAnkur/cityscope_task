@@ -22,4 +22,4 @@ const Avatar = ({ className, src, alt, size = 40, ...props }) => {
     )
 }
 
-export default Avatar
+export { Avatar }

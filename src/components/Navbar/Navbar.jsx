@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import Avatar from '../Avatar/Avatar';
-import { Link } from '../Link/Link';
+import {Avatar, Link} from '../';
 import Logo from '../../assets/websitelogo.png';
 import {GrMenu} from "react-icons/gr"
 import './Navbar.css';
