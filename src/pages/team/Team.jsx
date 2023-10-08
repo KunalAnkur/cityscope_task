@@ -1,7 +1,7 @@
 import React from "react";
 import "./Team.css";
 import { teamData } from "../../data";
-import { TeamCard } from "../../components";
+import { BackgroundStrip, TeamCard } from "../../components";
 const Team = () => {
   return (
     <div className="team-page">
@@ -13,10 +13,7 @@ const Team = () => {
         {teamData.map((team, index) => (
           <TeamCard key={index} name={team.name} designation={team.designation} imageSource={team.imageSource} links={team.links} />
         ))}
-        <div className="backgroud-pattern">
-          <div className="strip"></div>
-          <div className="strip"></div>
-        </div>
+        <BackgroundStrip />
       </div>
       <h2 className="intro-topic">
         and you! ;)

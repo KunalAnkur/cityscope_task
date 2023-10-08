@@ -1,0 +1,25 @@
+
+.timeline-content {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+    border-left: 1px solid white;
+    padding: 30px;
+    padding-top: 0;
+    position: relative;
+}
+
+.timeline-content::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border: 1px solid white;
+    position: absolute;
+    left: -4px;
+    background: #111;
+    border-radius: 100%;
+}
+
+.timeline-content .title {
+    margin-top: -7px;
+}

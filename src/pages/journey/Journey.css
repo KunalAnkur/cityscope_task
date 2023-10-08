@@ -1,0 +1,36 @@
+.journey-page {
+    box-shadow: var(--background-shadow);
+    background: #111;
+}
+
+.journey-page .banner {
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: url("../../assets/grasspic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 40px;
+}
+
+.banner-fadeBottom {
+    position: absolute;
+    bottom: 0;
+    height: 7.4rem;
+    width: 100%;
+    background-image: linear-gradient(
+        180deg,
+        transparent,
+        rgba(37,37,37,0.61),
+        #111
+    )
+}
+
+@media only screen and (max-width: 750px) {
+    .journey-page .banner {
+        font-size: 5vw;
+    }
+}
