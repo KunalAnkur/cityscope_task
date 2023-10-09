@@ -121,4 +121,83 @@ const journeyData = [
     },
 ]
 
-export {teamData, journeyData}
+const productData = [
+    {
+        id: "1",
+        title: "KSL 01",
+        offer: "",
+        rating: 4,
+        review: 80,
+        price: 20,
+        type: ["loafers", "sneaker"],
+        colors: ["red", "green", "black"],
+        designTemplate: 3
+    },
+    {
+        id: "2",
+        title: "KSW 01",
+        offer: "",
+        rating: 4,
+        review: 80,
+        price: 20,
+        type: ["loafers", "sneaker"],
+        colors: ["red", "green", "black"],
+        designTemplate: 3
+    },
+    {
+        id: "3",
+        title: "KSL 01",
+        offer: "",
+        rating: 4,
+        review: 80,
+        price: 20,
+        type: ["loafers", "sneaker"],
+        colors: ["red", "green", "black"],
+        designTemplate: 3
+    },
+    {
+        id: "4",
+        title: "KSW 01",
+        offer: "",
+        rating: 4,
+        review: 80,
+        price: 20,
+        type: ["loafers", "sneaker"],
+        colors: ["red", "green", "black"],
+        designTemplate: 3
+    },
+    {
+        id: "5",
+        title: "KSW 01",
+        offer: "",
+        rating: 4,
+        review: 80,
+        price: 20,
+        type: ["loafers", "sneaker"],
+        colors: ["red", "green", "black"],
+        designTemplate: 3
+    },
+    {
+        id: "6",
+        title: "Royal S 01",
+        offer: "",
+        rating: 4,
+        review: 80,
+        price: 20,
+        type: ["loafers", "sneaker"],
+        colors: ["red", "green", "black"],
+        designTemplate: 3
+    },
+    {
+        id: "7",
+        title: "Royal S 01",
+        offer: "",
+        rating: 4,
+        review: 80,
+        price: 20,
+        type: ["loafers", "sneaker"],
+        colors: ["red", "green", "black"],
+        designTemplate: 3
+    }
+]
+export { teamData, journeyData, productData }

@@ -1,0 +1,14 @@
+.filter-section {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 30px;
+    padding: 20px;
+    box-shadow: var(--background-shadow);
+}
+
+.filter-section .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}

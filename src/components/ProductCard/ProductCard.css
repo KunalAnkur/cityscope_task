@@ -1,0 +1,16 @@
+.product-card {
+    /* background-color: red; */
+}
+.product-card img {
+    width: 100%;
+    object-fit: contain;
+    height: 200px;
+
+}
+
+.product-detail {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+    
+}

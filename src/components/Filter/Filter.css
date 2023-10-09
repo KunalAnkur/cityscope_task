@@ -1,0 +1,39 @@
+.filter {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+}
+
+.filter-items {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+}
+
+.colour {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    position: relative;
+}
+.colour>*::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: black;
+    opacity: 0;
+}
+
+.colour>*:hover::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: black;
+    opacity: 0.5;
+}
+.colour .colour-box{
+    width: 30px;
+    height: 30px;
+}
