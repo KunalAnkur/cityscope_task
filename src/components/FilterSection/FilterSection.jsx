@@ -19,7 +19,7 @@ const FilterSection = ({ applyFilter }) => {
           <Filter title='Design templates' />
           <Filter title='Type' />
           <div className="apply-button">
-        <Button onClick={handleOnClick} label='Apply' type='primary' />
+            <Button onClick={handleOnClick} label='Apply' type='primary' />
           </div>
       </section>
   )

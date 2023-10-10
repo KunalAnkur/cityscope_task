@@ -4,7 +4,6 @@
     grid-gap: 30px;
     padding: 20px;
     box-shadow: var(--background-shadow);
-    height: fit-content;
 }
 
 .filter-section .header {
@@ -17,4 +16,5 @@
 .filter-section .apply-button {
     display: flex;
     justify-content: center;
+    margin-top: auto;
 }

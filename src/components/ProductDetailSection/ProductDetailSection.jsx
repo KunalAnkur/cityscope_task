@@ -28,31 +28,33 @@ const ProductDetailSection = ({ product, loading, getProduct, addToCart }) => {
 
   return (
     <section className='product-detail-section'>
-      <div onClick={handleOnBack} className="header">
-        <IoIosArrowBack size={25} />
-        <h1>Your design space</h1>
-      </div>
-      <div className="content">
-        <div className="product-showcase">
-          {!loading && <img className='main-image' src={product.mainImage} alt="" />}
-          {!loading && product.imageList.map(img => <img src={img} alt={product.title} />)}
+      {Object.keys(product).length && <>
+        <div onClick={handleOnBack} className="header">
+          <IoIosArrowBack size={25} />
+          <h1>Your design space</h1>
         </div>
-        <div className="product-details">
-          <div className='heading'>
-            <h1>{product.title}</h1>
-            <h3>{product.description}</h3>
-            <h4>Rs {product.price}/-</h4>
-            <p>{product.offer}</p>
+        <div className="content">
+          <div className="product-showcase">
+            {<img className='main-image' src={product.mainImage} alt="" />}
+            {product.imageList.map((img, id) => <img key={id} src={img} alt={product.title} />)}
           </div>
-          <div className="feature-selectors">
-            {Object.keys(product.options).map((key, id) => (<Selectors key={id} title={key} selector={product.options[key]} setSelector={setOptions} />))}
+          <div className="product-details">
+            <div className='heading'>
+              <h1>{product.title}</h1>
+              <h3>{product.description}</h3>
+              <h4>Rs {product.price}/-</h4>
+              <p>{product.offer}</p>
+            </div>
+            <div className="feature-selectors">
+              {Object.keys(product.options).map((key, id) => (<Selectors key={id} title={key} selector={product.options[key]} setSelector={setOptions} />))}
+            </div>
           </div>
         </div>
-      </div>
-      <div className="button-list">
-        <Button type='secondary' label='Share design' />
-        <Button onClick={handleOnClick} label='Add to cart' />
-      </div>
+        <div className="button-list">
+          <Button type='secondary' label='Share design' />
+          <Button onClick={handleOnClick} label='Add to cart' />
+        </div></>}
+
     </section>
   )
 }

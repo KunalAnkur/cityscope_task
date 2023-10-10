@@ -3,7 +3,7 @@
     flex-direction: column;
     padding: 20px;
     box-shadow: var(--background-shadow);
-    height: fit-content;
+    
     gap: 20px;
 }
 .cart-section .header {
@@ -13,7 +13,7 @@
     font-size: 20px;
 }
 .cart-section .product-list {
-    height: 54vh;
+    height: 100%;
     overflow-y: auto;
     display: flex;
     flex-direction: column;

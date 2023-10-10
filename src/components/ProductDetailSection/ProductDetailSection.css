@@ -24,6 +24,7 @@
     height: 100%;
     width: 100%;
     object-fit: contain;
+    border: 1px solid lightgray;
 }
 .product-detail-section .product-showcase {
     display: grid;
@@ -63,4 +64,29 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+@media only screen and (max-width: 1220px) {
+  .product-detail-section .content {
+    flex-direction: column;
+    
+   }
+   .product-detail-section .product-details {
+    width: 100%;
+   }
+   .product-detail-section .product-showcase {
+    width: 100%;
+   }
+}
+
+@media only screen and (max-width: 650px) {
+  .product-detail-section .product-showcase {
+    grid-template-rows: repeat(4, 1fr);
+    
+}
+
+    .product-detail-section .main-image {
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 4;
+    }
 }
