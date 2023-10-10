@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/cityscope_task/static/css/main.f64b798f.css",
+    "main.js": "/cityscope_task/static/js/main.f4a31877.js",
+    "static/media/shoe2.png": "/cityscope_task/static/media/shoe2.ef5414e508ed55925e20.png",
+    "static/media/tonikroos.jpg": "/cityscope_task/static/media/tonikroos.fb061c76e3ec05875a55.jpg",
+    "static/media/grasspic.jpg": "/cityscope_task/static/media/grasspic.60d418585600b05647eb.jpg",
+    "static/media/Product_Sans.ttf": "/cityscope_task/static/media/Product_Sans.863727019c4716c4dc24.ttf",
+    "static/media/shoe.jpg": "/cityscope_task/static/media/shoe.9a7bc9c8f2cbd547b24e.jpg",
+    "static/media/christiano.jpg": "/cityscope_task/static/media/christiano.6c59ff44f69c755a3933.jpg",
+    "static/media/zidane.jpg": "/cityscope_task/static/media/zidane.b7444a37d5bbb4202777.jpg",
+    "static/media/Gobold_Regular.otf": "/cityscope_task/static/media/Gobold_Regular.5576dd47e1aa896baaf9.otf",
+    "static/media/medium.png": "/cityscope_task/static/media/medium.b87629cbe6267bf69b33.png",
+    "static/media/ikercasillas.jpg": "/cityscope_task/static/media/ikercasillas.3d1a1e063e58e3314681.jpg",
+    "static/media/insta.svg": "/cityscope_task/static/media/insta.47862a9f317959c3d5fc29700d0ca6af.svg",
+    "index.html": "/cityscope_task/index.html",
+    "static/media/facebook.svg": "/cityscope_task/static/media/facebook.6b4f7afe6ec5cf535062865a07aba10b.svg",
+    "main.f64b798f.css.map": "/cityscope_task/static/css/main.f64b798f.css.map",
+    "main.f4a31877.js.map": "/cityscope_task/static/js/main.f4a31877.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f64b798f.css",
+    "static/js/main.f4a31877.js"
+  ]
+}
