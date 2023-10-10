@@ -8,7 +8,7 @@ This project is live 🚀  [Click Here](https://main--glittering-pegasus-4fb0c6.
 - React Icon
 
 ## Filter Functionality
-Watch this for filter functionality or just [check it out](https://main--glittering-pegasus-4fb0c6.netlify.app/store)
+Watch this for filter functionality or just [check it out](https://main--glittering-pegasus-4fb0c6.netlify.app/)
 ![Filter Function Showcase](https://github.com/KunalAnkur/cityscope_task/assets/57923976/25820cf4-b230-46e8-9e63-93dd6f6db950)
 
 
