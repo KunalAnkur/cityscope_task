@@ -126,7 +126,7 @@ const journeyData = [
 const productsData = [
     {
         id: "1",
-        title: "KSL 01 loafers r g bl - 2",
+        title: "KSL 01 loafers RGB - 2",
         offer: "As anoxcusio 20% of shopping win HDFC bank",
         description:"by KICKSUP and you",
         rating: 4,
@@ -147,7 +147,7 @@ const productsData = [
     },
     {
         id: "2",
-        title: "KSW 01 sneakers r g bl - 3",
+        title: "Nike sneakers RGB - 3",
         offer: "As anoxcusio 20% of shopping win HDFC bank",
         description: "by KICKSUP and you",
         rating: 4,
@@ -168,7 +168,7 @@ const productsData = [
     },
     {
         id: "3",
-        title: "KSL 01 loafer rgb - 3",
+        title: "KSL 01 loafer RGB - 3+",
         offer: "As anoxcusio 20% of shopping win HDFC bank",
         description: "by KICKSUP and you",
         rating: 4,
@@ -191,7 +191,7 @@ const productsData = [
     },
     {
         id: "4",
-        title: "KSW 01 loafer rgb - 2",
+        title: "PUMA 01 loafer RGB - 2",
         offer: "As anoxcusio 20% of shopping win HDFC bank",
         description: "by KICKSUP and you",
         rating: 4,
@@ -214,7 +214,7 @@ const productsData = [
     },
     {
         id: "5",
-        title: "KSW 01 loafer red blue - 4",
+        title: "KSW 01 loafer RB - 4",
         offer: "As anoxcusio 20% of shopping win HDFC bank",
         description: "by KICKSUP and you",
         rating: 4,
@@ -237,7 +237,7 @@ const productsData = [
     },
     {
         id: "6",
-        title: "Royal S 01 sneaker rgb - 6",
+        title: "Royal S 01 sneaker RGB - 6",
         offer: "As anoxcusio 20% of shopping win HDFC bank",
         description: "by KICKSUP and you",
         rating: 4,
@@ -260,7 +260,7 @@ const productsData = [
     },
     {
         id: "7",
-        title: "Royal S 01 loafer r o - 2",
+        title: "Royal S 01 loafer RO - 2",
         offer: "As anoxcusio 20% of shopping win HDFC bank",
         description: "by KICKSUP and you",
         rating: 4,
@@ -278,8 +278,48 @@ const productsData = [
             Sole: ["red", "green", "blue"],
             Size: [7, 8, 9, 10],
         },
-
-
-    }
+    },
+    {
+        id: "8",
+        title: "Vana S 01 loafer RY - 2",
+        offer: "As anoxcusio 20% of shopping win HDFC bank",
+        description: "by KICKSUP and you",
+        rating: 4,
+        review: 80,
+        price: 5300,
+        type: "Loafers",
+        colors: ["red", "yellow"],
+        designTemplate: 2,
+        mainImage: ProductImageOne,
+        imageList: [ProductImageOne, ProductImageTwo, ProductImageOne],
+        options: {
+            Front: ["red", "green", "blue"],
+            Middle: ["red", "green", "blue"],
+            Back: ["red", "green", "blue"],
+            Sole: ["red", "green", "blue"],
+            Size: [7, 8, 9, 10],
+        },
+    },
+    {
+        id: "9",
+        title: "Converse S 01 loafer RO - 2",
+        offer: "As anoxcusio 20% of shopping win HDFC bank",
+        description: "by KICKSUP and you",
+        rating: 4,
+        review: 80,
+        price: 5300,
+        type: "Loafers",
+        colors: ["red", "orange"],
+        designTemplate: 2,
+        mainImage: ProductImageOne,
+        imageList: [ProductImageOne, ProductImageTwo, ProductImageOne],
+        options: {
+            Front: ["red", "green", "blue"],
+            Middle: ["red", "green", "blue"],
+            Back: ["red", "green", "blue"],
+            Sole: ["red", "green", "blue"],
+            Size: [7, 8, 9, 10],
+        },
+    },
 ]
 export { teamData, journeyData, productsData }

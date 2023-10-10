@@ -1,4 +1,4 @@
-import { APPLY_FILTER, ENABLE_LOADING, GET_PRODUCT, GET_PRODUCTS, REMOVE_COLOUR_FILTER, REMOVE_COST_FILTER, REMOVE_DESIGN_TEMPLATES_FILTER, REMOVE_TYPE_FILTER, SET_COLOUR_FILTER, SET_COST_FILTER, SET_DESIGN_TEMPLATES_FILTER, SET_TYPE_FILTER } from "."
+import { APPLY_FILTER, ENABLE_LOADING, GET_PRODUCT, GET_PRODUCTS, REMOVE_COLOUR_FILTER, REMOVE_COST_FILTER, REMOVE_DESIGN_TEMPLATES_FILTER, REMOVE_TYPE_FILTER, SET_COLOUR_FILTER, SET_COST_FILTER, SET_DESIGN_TEMPLATES_FILTER, SET_TYPE_FILTER, SET_SEARCH_FILTER } from "."
 
 const initialState = {
     products: [],
@@ -7,6 +7,7 @@ const initialState = {
     colourFilter: "all",
     designTemplateFilter: [],
     typeFilter: [],
+    searchFilter: "",
     loading: true,
 }
 
@@ -70,6 +71,11 @@ const productReducer = (state = initialState, action) => {
                 ...state,
                 typeFilter: [...state.typeFilter, action.payload]
             }
+        case SET_SEARCH_FILTER:
+            return {
+                ...state,
+                searchFilter: action.payload
+            }
         case REMOVE_TYPE_FILTER:
             const removeTypeFilter = state.typeFilter.filter(filter => filter !== action.payload);
             return {
@@ -77,6 +83,7 @@ const productReducer = (state = initialState, action) => {
                 typeFilter: [...removeTypeFilter]
             }
         case APPLY_FILTER:
+            console.log("hello every one")
             const filteredProducts = state.products.filter(product => {
                 
                 const costFilter = state.costFilter.sort();
@@ -95,7 +102,9 @@ const productReducer = (state = initialState, action) => {
 
                 const typeFilterPass = state.typeFilter.length === 0 || state.typeFilter.includes(product.type);
 
-                return colorFilterPass && typeFilterPass && designTemplateFilterPass & costFilterPass;
+                const searchFilterPass = !state.searchFilter || product.title.toLowerCase().includes(state.searchFilter)
+
+                return colorFilterPass && typeFilterPass && designTemplateFilterPass & costFilterPass & searchFilterPass;
             });
             return {
                 ...state,

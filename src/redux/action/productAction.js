@@ -15,7 +15,12 @@ export const setFilter = (filterName="", filter) => (dispatch) => {
     const type = `SET_${getString(filterName)}_FILTER`
     dispatch({ type, payload: filter })
 }
-
+export const setSearchFilter = (filter = "") => (dispatch) => {
+    const filterString = filter.trim().toLowerCase();
+    dispatch({ type: "SET_SEARCH_FILTER", payload: filterString })
+    mockApiGetProduct(dispatch)
+    dispatch({ type: APPLY_FILTER })
+} 
 export const removeFilterByID = (filterName = "", filter) => (dispatch) => {
     const type = `REMOVE_${getString(filterName)}_FILTER`
     dispatch({ type, payload: filter })
