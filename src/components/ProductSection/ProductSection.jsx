@@ -25,7 +25,7 @@ const ProductSection = ({ products, loading, getProducts, setSearchFilter }) => 
                 </div>
             </div>
             <div className="product-list">
-                {!loading && products.map(product => <ProductCard onClick={() => handleOnClick(product.id)} key={product.id} imageSource={product.imageSource} price={product.price} rating={product.rating} title={product.title} />)}
+                {!loading && products.map(product => <ProductCard onClick={() => handleOnClick(product.id)} key={product.id} imageSource={product.mainImage} price={product.price} rating={product.rating} title={product.title} />)}
             </div>
         </section>
     )
