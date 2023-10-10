@@ -66,6 +66,16 @@
     gap: 20px;
 }
 
+.product-detail-section .rating {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 20px;
+}
+
+.product-detail-section .review > *:not(span){
+    font-size: 20px;
+}
 @media only screen and (max-width: 1220px) {
   .product-detail-section .content {
     flex-direction: column;

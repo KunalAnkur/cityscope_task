@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { IoIosArrowBack } from "react-icons/io"
 import "./ProductDetailSection.css"
-import { Button, Selectors } from '..'
+import { Button, Selectors, StarRating } from '..'
 import { getProduct, addToCart } from "../../redux/action"
 import { useNavigate, useParams } from 'react-router-dom'
 import { connect } from 'react-redux'
 
-const ProductDetailSection = ({ product, loading, getProduct, addToCart }) => {
+const ProductDetailSection = ({ product, getProduct, addToCart }) => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [options, setOptions] = useState({});
@@ -42,6 +42,10 @@ const ProductDetailSection = ({ product, loading, getProduct, addToCart }) => {
             <div className='heading'>
               <h1>{product.title}</h1>
               <h3>{product.description}</h3>
+              <div className="review">
+                <StarRating disabled={true} value={product.rating} />
+                <span>{product.review} reviews</span>
+              </div>
               <h4>Rs {product.price}/-</h4>
               <p>{product.offer}</p>
             </div>
@@ -49,6 +53,10 @@ const ProductDetailSection = ({ product, loading, getProduct, addToCart }) => {
               {Object.keys(product.options).map((key, id) => (<Selectors key={id} title={key} selector={product.options[key]} setSelector={setOptions} />))}
             </div>
           </div>
+        </div>
+        <div className="rating">
+          <span>Rate the product</span>
+          <StarRating />
         </div>
         <div className="button-list">
           <Button type='secondary' label='Share design' />
@@ -61,7 +69,6 @@ const ProductDetailSection = ({ product, loading, getProduct, addToCart }) => {
 const mapStateToProps = (state) => {
   return {
     product: state.product.product,
-    loading: state.product.loading
   }
 }
 
