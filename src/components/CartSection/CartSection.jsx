@@ -4,15 +4,22 @@ import { MdDateRange } from "react-icons/md"
 import { GrLocation } from "react-icons/gr"
 import "./CartSection.css"
 import { Button } from '../Button/Button'
-const CartSection = () => {
+import { CartProduct } from '..'
+import { connect } from 'react-redux'
+import {removeToCart} from "../../redux/action"
+const CartSection = ({ products = [], removeToCart }) => {
+  const handleOnClose = (index) => {
+    removeToCart(index)
+  }
   return (
     <section className='cart-section'>
         <div className="header">
             <h1>Cart</h1>
             <BsCartCheck  size={35}/>
         </div>
-          <div className="product-list no-product">
-              <span>What's stopping you, designer?</span>
+          <div className={`product-list ${products.length === 0 ? "no-product" : ""}`}>
+        {products.length === 0 ? <span>What's stopping you, designer?</span> : products.map(product => <CartProduct key={product.id} description={product.description} imageUrl={product.mainImage} price={product.price} title={product.title} onClose={() => handleOnClose(product.id)} />) }
+              
         </div>
         <div className="footer">
               <div className="button-area">
@@ -32,5 +39,10 @@ const CartSection = () => {
     </section>
   )
 }
-
-export { CartSection }
+const mapStateToProps = (state) => {
+  return {
+    products: state.cart.products
+  }
+} 
+const connectedCartSection = connect(mapStateToProps, { removeToCart })(CartSection);
+export { connectedCartSection as CartSection }

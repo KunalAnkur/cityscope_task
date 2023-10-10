@@ -1,0 +1,17 @@
+.cart-product {
+    width: 100%;
+    display: flex;
+    position: relative;
+    gap: 10px;
+}
+.cart-product .close-btn {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.cart-product img {
+    width: 50%;
+    object-fit: contain;
+}

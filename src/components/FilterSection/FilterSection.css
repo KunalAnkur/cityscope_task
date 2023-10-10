@@ -4,6 +4,7 @@
     grid-gap: 30px;
     padding: 20px;
     box-shadow: var(--background-shadow);
+    height: fit-content;
 }
 
 .filter-section .header {
@@ -11,4 +12,9 @@
     align-items: center;
     justify-content: space-between;
     font-size: 20px;
+}
+
+.filter-section .apply-button {
+    display: flex;
+    justify-content: center;
 }

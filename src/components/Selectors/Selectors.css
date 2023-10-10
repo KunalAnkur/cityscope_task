@@ -1,0 +1,46 @@
+.selectors {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.selectors .pattern-list {
+    display: flex;
+    gap: 10px;
+}
+.selectors .size {
+    border: 1px solid #111;
+}
+
+.selectors .pattern {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selectors .pattern:hover::after {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.selectors .pattern.selected::after {
+    position: absolute;
+    content: "\2713";
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: black;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

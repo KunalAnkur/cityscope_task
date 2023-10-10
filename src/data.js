@@ -8,6 +8,8 @@ import TonyImage from "./assets/tonikroos.jpg"
 import IkerImage from "./assets/ikercasillas.jpg"
 import JamesImage from "./assets/james.jpg"
 import ChristianoImage from "./assets/christiano.jpg"
+import ProductImageOne from "./assets/shoe.jpg"
+import ProductImageTwo from "./assets/shoe2.png"
 
 const teamData = [
     {
@@ -121,83 +123,163 @@ const journeyData = [
     },
 ]
 
-const productData = [
+const productsData = [
     {
         id: "1",
-        title: "KSL 01",
-        offer: "",
+        title: "KSL 01 loafers r g bl - 2",
+        offer: "As anoxcusio 20% of shopping win HDFC bank",
+        description:"by KICKSUP and you",
         rating: 4,
         review: 80,
-        price: 20,
-        type: ["loafers", "sneaker"],
-        colors: ["red", "green", "black"],
-        designTemplate: 3
+        price: 2000,
+        type: "Loafers",
+        colors: ["red", "green", "blue"],
+        designTemplate: 2,
+        mainImage: ProductImageOne,
+        imageList: [ProductImageOne, ProductImageTwo, ProductImageOne],
+        options: {
+            Front: ["red", "green", "blue"],
+            Middle: ["red", "green", "blue"], 
+            Back: ["red", "green", "blue"],
+            Sole: ["red", "green", "blue"],
+            Size: [7, 8, 9, 10],
+        },
     },
     {
         id: "2",
-        title: "KSW 01",
-        offer: "",
+        title: "KSW 01 sneakers r g bl - 3",
+        offer: "As anoxcusio 20% of shopping win HDFC bank",
+        description: "by KICKSUP and you",
         rating: 4,
         review: 80,
-        price: 20,
-        type: ["loafers", "sneaker"],
-        colors: ["red", "green", "black"],
-        designTemplate: 3
+        price: 4000,
+        type: "Sneakers",
+        colors: ["red", "green", "blue"],
+        designTemplate: 3,
+        mainImage: ProductImageTwo,
+        imageList: [ProductImageTwo, ProductImageTwo, ProductImageOne],
+        options: {
+            Front: ["red", "green", "blue"],
+            Middle: ["red", "green", "blue"],
+            Back: ["red", "green", "blue"],
+            Sole: ["red", "green", "blue"],
+            Size: [7, 8, 9, 10],
+        },
     },
     {
         id: "3",
-        title: "KSL 01",
-        offer: "",
+        title: "KSL 01 loafer rgb - 3",
+        offer: "As anoxcusio 20% of shopping win HDFC bank",
+        description: "by KICKSUP and you",
         rating: 4,
         review: 80,
-        price: 20,
-        type: ["loafers", "sneaker"],
-        colors: ["red", "green", "black"],
-        designTemplate: 3
+        price: 1000,
+        type: "Loafers",
+        colors: ["red", "green", "blue"],
+        designTemplate: 3,
+        mainImage: ProductImageTwo,
+        imageList: [ProductImageTwo, ProductImageTwo, ProductImageOne],
+        options: {
+            Front: ["red", "green", "blue"],
+            Middle: ["red", "green", "blue"],
+            Back: ["red", "green", "blue"],
+            Sole: ["red", "green", "blue"],
+            Size: [7, 8, 9, 10],
+        },
+
+
     },
     {
         id: "4",
-        title: "KSW 01",
-        offer: "",
+        title: "KSW 01 loafer rgb - 2",
+        offer: "As anoxcusio 20% of shopping win HDFC bank",
+        description: "by KICKSUP and you",
         rating: 4,
         review: 80,
-        price: 20,
-        type: ["loafers", "sneaker"],
-        colors: ["red", "green", "black"],
-        designTemplate: 3
+        price: 9000,
+        type: "Loafers",
+        colors: ["red", "green", "blue"],
+        designTemplate: 2,
+        mainImage: ProductImageOne,
+        imageList: [ProductImageOne, ProductImageTwo, ProductImageOne],
+        options: {
+            Front: ["red", "green", "blue"],
+            Middle: ["red", "green", "blue"],
+            Back: ["red", "green", "blue"],
+            Sole: ["red", "green", "blue"],
+            Size: [7, 8, 9, 10],
+        },
+
+
     },
     {
         id: "5",
-        title: "KSW 01",
-        offer: "",
+        title: "KSW 01 loafer red blue - 4",
+        offer: "As anoxcusio 20% of shopping win HDFC bank",
+        description: "by KICKSUP and you",
         rating: 4,
         review: 80,
-        price: 20,
-        type: ["loafers", "sneaker"],
-        colors: ["red", "green", "black"],
-        designTemplate: 3
+        price: 1200,
+        type: "Loafers",
+        colors: ["red", "blue"],
+        designTemplate: 4,
+        mainImage: ProductImageTwo,
+        imageList: [ProductImageTwo, ProductImageTwo, ProductImageOne],
+        options: {
+            Front: ["red", "green", "blue"],
+            Middle: ["red", "green", "blue"],
+            Back: ["red", "green", "blue"],
+            Sole: ["red", "green", "blue"],
+            Size: [7, 8, 9, 10],
+        },
+
+
     },
     {
         id: "6",
-        title: "Royal S 01",
-        offer: "",
+        title: "Royal S 01 sneaker rgb - 6",
+        offer: "As anoxcusio 20% of shopping win HDFC bank",
+        description: "by KICKSUP and you",
         rating: 4,
         review: 80,
-        price: 20,
-        type: ["loafers", "sneaker"],
-        colors: ["red", "green", "black"],
-        designTemplate: 3
+        price: 2250,
+        type: "Sneakers",
+        colors: ["red", "green", "blue"],
+        designTemplate: 6,
+        mainImage: ProductImageTwo,
+        imageList: [ProductImageTwo, ProductImageTwo, ProductImageOne],
+        options: {
+            Front: ["red", "green", "blue"],
+            Middle: ["red", "green", "blue"],
+            Back: ["red", "green", "blue"],
+            Sole: ["red", "green", "blue"],
+            Size: [7, 8, 9, 10],
+        },
+
+
     },
     {
         id: "7",
-        title: "Royal S 01",
-        offer: "",
+        title: "Royal S 01 loafer r o - 2",
+        offer: "As anoxcusio 20% of shopping win HDFC bank",
+        description: "by KICKSUP and you",
         rating: 4,
         review: 80,
-        price: 20,
-        type: ["loafers", "sneaker"],
-        colors: ["red", "green", "black"],
-        designTemplate: 3
+        price: 5300,
+        type: "Loafers",
+        colors: ["red", "orange"],
+        designTemplate: 2,
+        mainImage: ProductImageOne,
+        imageList: [ProductImageOne, ProductImageTwo, ProductImageOne],
+        options: {
+            Front: ["red", "green", "blue"],
+            Middle: ["red", "green", "blue"],
+            Back: ["red", "green", "blue"],
+            Sole: ["red", "green", "blue"],
+            Size: [7, 8, 9, 10],
+        },
+
+
     }
 ]
-export { teamData, journeyData, productData }
+export { teamData, journeyData, productsData }

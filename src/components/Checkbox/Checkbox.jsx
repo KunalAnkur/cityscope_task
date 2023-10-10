@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Checkbox.css"
-const Checkbox = ({ label = "", checked, onChange = () => {}, ...props }) => {
+const Checkbox = ({ label = "", checked = false, onChange = () => {}, ...props }) => {
     return (
         <label className='checkbox-container'>
             <input

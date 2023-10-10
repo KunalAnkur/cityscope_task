@@ -3,6 +3,8 @@
     flex-direction: column;
     padding: 20px;
     box-shadow: var(--background-shadow);
+    height: fit-content;
+    gap: 20px;
 }
 .cart-section .header {
     display: flex;
@@ -11,9 +13,12 @@
     font-size: 20px;
 }
 .cart-section .product-list {
-    height: 70vh;
+    height: 54vh;
     overflow-y: auto;
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 25px;
 }
 .cart-section .product-list.no-product{
     justify-content: center;

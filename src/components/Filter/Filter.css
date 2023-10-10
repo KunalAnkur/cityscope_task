@@ -32,7 +32,18 @@
     height: 30px;
     background: black;
     opacity: 0.5;
+
 }
+.colour>.selected::after {
+    content: "\2713";
+    background: black;
+    opacity: 0.5;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .colour .colour-box{
     width: 30px;
     height: 30px;
