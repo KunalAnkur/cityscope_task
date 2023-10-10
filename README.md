@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# CityScope Task
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is live 🚀  [Click Here](https://6524fd892472a50008904f05--glittering-pegasus-4fb0c6.netlify.app).
 
-## Available Scripts
+### Tech Stack | Library
+- React JS
+- Redux
+- React Icon
 
-In the project directory, you can run:
+### Project Show Case
 
-### `npm start`
+#### 1. Store Page
+<img width="1808" alt="store page photo desktop view" src="https://github.com/KunalAnkur/cityscope_task/assets/57923976/ee75295e-f5e5-4519-b03f-103d92a69c78">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img width="387" alt="Screenshot 2023-10-10 at 1 49 16 PM" src="https://github.com/KunalAnkur/cityscope_task/assets/57923976/079d9d24-47d6-40af-8ffa-a0066b23ff05">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<img width="382" alt="Screenshot 2023-10-10 at 1 49 06 PM" src="https://github.com/KunalAnkur/cityscope_task/assets/57923976/27f5ea96-ac92-43e6-b10c-512c5fe7f52f">
+<img width="387" alt="Screenshot 2023-10-10 at 1 49 27 PM" src="https://github.com/KunalAnkur/cityscope_task/assets/57923976/767846bd-b05d-475e-9ccf-2ea58e09ddb0">
 
-### `npm test`
+#### 2. Product Page
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img width="2036" alt="Screenshot 2023-10-10 at 1 51 44 PM" src="https://github.com/KunalAnkur/cityscope_task/assets/57923976/386f2dbd-aee2-4b21-9538-193609ffb5af">
+<img width="386" alt="Screenshot 2023-10-10 at 1 52 17 PM" src="https://github.com/KunalAnkur/cityscope_task/assets/57923976/23b8f3bf-ffb5-4d3c-b313-e8fa035d346b">
+<img width="381" alt="Screenshot 2023-10-10 at 1 52 07 PM" src="https://github.com/KunalAnkur/cityscope_task/assets/57923976/e50dc25e-9488-4a1e-a685-d625020ba6ec">
 
-### `npm run build`
+#### 3. Journey Page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img width="2025" alt="Journey Page Desktop VIew" src="https://github.com/KunalAnkur/cityscope_task/assets/57923976/913535ef-1e54-4118-a071-13baea0b4371">
+<img width="384" alt="Screenshot 2023-10-10 at 1 55 00 PM" src="https://github.com/KunalAnkur/cityscope_task/assets/57923976/0083d9ca-7f11-4d75-8422-c61af89518c1">
+<img width="385" alt="Screenshot 2023-10-10 at 1 54 51 PM" src="https://github.com/KunalAnkur/cityscope_task/assets/57923976/d343b8c8-b8c5-425d-8b77-98cf43215330">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### 4. Team Page
+<img width="2039" alt="Team Page Desktop view" src="https://github.com/KunalAnkur/cityscope_task/assets/57923976/a777976e-2407-492b-9d30-2307f7b0d19b">
+<img width="389" alt="Screenshot 2023-10-10 at 1 59 05 PM" src="https://github.com/KunalAnkur/cityscope_task/assets/57923976/c12aea41-d738-4f01-81e0-cd9fa97ed3dd">
+<img width="382" alt="Screenshot 2023-10-10 at 1 58 55 PM" src="https://github.com/KunalAnkur/cityscope_task/assets/57923976/e7b9c2ba-d42a-4c8e-bbcf-68201340cb07">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### 5. Contact Us Page
+<img width="2035" alt="Contact Us Page Desktop View" src="https://github.com/KunalAnkur/cityscope_task/assets/57923976/a01189d8-03cc-4931-b67c-3b83fe044e69">
+<img width="385" alt="Screenshot 2023-10-10 at 1 56 44 PM" src="https://github.com/KunalAnkur/cityscope_task/assets/57923976/cc848bf5-876e-41f2-9a16-a72351d54114">
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
